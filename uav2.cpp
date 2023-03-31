@@ -12,7 +12,6 @@ vector<vector<double>> getPoints() {
     int choice;
     vector<vector<double>> waypoints;
     cout<<"enter 1 for using default waypoints; 2 for customization: "; cin>>choice;
-
     if (choice==1) {
         waypoints={
             {10000,10000}, 
@@ -35,8 +34,7 @@ vector<vector<double>> getPoints() {
             cout<<"please enter the y coordinate: "; cin>>y;
             waypoints.push_back({x,y});
         }
-    }
-       
+    }      
     return waypoints;
 }
 
